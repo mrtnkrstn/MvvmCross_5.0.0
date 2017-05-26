@@ -1,0 +1,7 @@
+Droid/obj
+iOS/bin
+iOS/obj
+MvvmCrossTester/bin
+MvvmCrossTester/obj
+packages
+*.userprefs
