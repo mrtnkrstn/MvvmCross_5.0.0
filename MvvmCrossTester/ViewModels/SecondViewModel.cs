@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
 
 namespace MvvmCrossTester
@@ -7,7 +7,11 @@ namespace MvvmCrossTester
     {
         public SecondViewModel()
         {
-            var i = 0;
+        }
+
+        public async override Task Initialize()
+        {
+            await base.Initialize();
         }
 
         public override void Start()

@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System.Threading.Tasks;
 using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
 
@@ -11,6 +11,11 @@ namespace MvvmCrossTester
         public FirstViewModel(IMvxNavigationService navService)
         {
             _navService = navService;
+        }
+
+        public async override Task Initialize()
+        {
+            await base.Initialize();
         }
 
         public override void Start()
